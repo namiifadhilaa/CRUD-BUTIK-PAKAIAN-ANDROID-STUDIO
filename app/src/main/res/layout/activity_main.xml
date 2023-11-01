@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30sp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Categories"
+        android:fontFamily="@font/sora_semibold"
+        android:textSize="14sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-10dp"/>
+
+    <Button
+        android:id="@+id/buttonPindah"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:text="View Data"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4E51BF"
+        android:onClick="next"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/buttonTambahPakaian"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:text="Add Data"
+        android:background="@drawable/shape"
+        android:backgroundTint="#F4F5FE"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Table"
+        android:fontFamily="@font/sora_semibold"
+        android:textSize="14sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="314sp"
+        android:layout_height="262sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tablePakaian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape"></TableLayout>
+        </androidx.core.widget.NestedScrollView>
+    </HorizontalScrollView>
+
+
+    <!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalScrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" >-->
+
+<!--        <ScrollView-->
+<!--            android:id="@+id/verticalScrollView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" >-->
+
+<!--            <TableLayout-->
+<!--                android:id="@+id/tablePakaian"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp" >-->
+<!--            </TableLayout>-->
+<!--        </ScrollView>-->
+<!--    </HorizontalScrollView>-->
+
+</LinearLayout>
